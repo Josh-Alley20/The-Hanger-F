@@ -1,0 +1,130 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>The Hanger - MyADS-B</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="photos/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="photos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="photos/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Abel%7CSatisfy" rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="hangar.css"  type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="centeredpage">
+    <div class="logo">
+			<a href="index.html"><img src="photos/logo.png" width="300" height="120" alt="logo"></a>
+	  </div>
+	</div>
+	<div id="header-wrapper">
+		  <div id="header" class="container">
+			<div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="index.html">Homepage</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="trips.html">Trips</a></li>
+					<li><a href="ADSB.html">ADS-B</a></li>
+					<li><a href="MA.html">Military Aircraft</a></li>
+          <li><a href="CA.html">Civil Aircraft</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<main>
+	<div id="page">
+		<div id="content">
+			<div class="post">
+				<h1 class="title"><a href="#">My ADS-B</a></h1>
+				<span style="white-space: nowrap;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home: April, 2023</span>
+			</div>
+		</div>
+	</div>
+  <div id="content-2">
+    <div class="Aircraft"> 
+      <img src="photos/Antenna.jpg" alt="Antenna" width="250" height="333">
+    </div>
+    <h2>What is ADSB</h2>
+    <p>
+      ADS-B stands for Automatic Dependent Surveillance-Broadcast. It is a technology used in aviation 
+      to transmit and receive information about an aircraft's position, speed, altitude, and other 
+      parameters. The system uses GPS technology to determine the aircraft's location and then broadcasts 
+      this information to other aircraft and ground stations in the area.
+    </p>
+    <h2>My ADSB</h2>
+    <p>
+      About a week ago I set up my own ADS-B system for tracking aircraft. I followed <a href="https://www.adsbexchange.com/how-to-feed/adsbx-custom-pi-image/">This</a>
+      Guide to set up and configure the Raspberry PI. At first, I planned to use my TureNAS server in my
+      basement but the ADS-B Antenna cable length was not long enough and I didn't want to risk signal 
+      degradation. After setting up everything and using epoxy to attach the antenna to PBC I have the set 
+      up here. The main thing with these ADS-B sets up is how much range you can get. My range is asymmetric I 
+      believe has to do with Atlanta but I have a max range of 200-250 miles. From day to day I pick up on
+      average 2,159 aircraft.
+    </p>
+      
+      <h4>Marterals</h4>
+       <table>
+      <tr>
+        <th>1090 MHz Outdoor Antenna with FlightStick</th>
+        <td><a href="https://a.co/d/bGsBAyt" target="_blank">Amazon.com</a></td>
+      </tr>
+      <tr>
+        <th>Raspberry Pi 4 Model B</th>
+        <td><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">RaspberryPi.org</a></td>
+      </tr>
+      <tr>
+        <th>32GB Micro SD</th>
+        <td><a href="https://a.co/d/cVZBwt3" target="_blank">Amazon.com</a></td>
+      </tr>
+      <tr>
+        <th>Raspberry Pi Power Supply</th>
+        <td><a href="https://a.co/d/gXwXeS1" target="_blank">Amazon.com</a></td>
+      </tr>
+      <tr>
+        <th>Raspberry Pi Case with fan and Heatsink</th>
+        <td><a href="https://a.co/d/8a3pwcg" target="_blank">Amazon.com</A></td>
+      <tr>
+        <th>Might need a 1090 Mhz Saw Filter</th>
+        <td><a href="https://a.co/d/ghEZ0PL" target="_blank">Amazon.com</a></td>
+      </tr>
+    </table>
+    <div class="Aircraft"> 
+        <img src="photos/other/PI.jpg" alt="PI" width="250" height="333">
+    </div>
+    <h4>ADS-B Sites I feed </h4>
+     <table>
+      <tr>
+        <th>ADS-B Exchange</th>
+        <td><a href="https://globe.adsbexchange.com/?feed=8MYfVW0nUJ7l" target="_blank">Check it out</a></td>
+      </tr>
+      <tr>
+        <th>Flight Aware</th>
+        <td><a href="https://flightaware.com/adsb/stats/user/baddogg113" target="_blank">These are my stats on flightaware</a></td>
+      </tr>
+      <tr>
+        <th>Flight Radar 24</th>
+        <td><a href="https://www.flightradar24.com/33.2,-84.74/8" target="_blank">Check it out usesing fliter: Radar T-KFFC3</a></td>
+      </tr>
+    </table>
+    <h4>My ADS-B-MAP: What aircraft iam seeing now</h4>  
+    <div class="ADSB-MAP-2">
+     <iframe src="https://globe.adsbexchange.com/?feed=8MYfVW0nUJ7l" title="my adsb" width="710" height="400"> </iframe>
+    </div>
+  </div>
+	</main>
+</div>
+<div id="footer">
+	<p>&copy; 2023, Joshua Alley. All rights reserved. <b>Email:</b><a href="mailto:jalley@augusta.edu" target="_blank">Jalley@augusta.edu</a></P>
+</div>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NE4DL1K0WT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NE4DL1K0WT');
+</script>
+</body>
+</html>

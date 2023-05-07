@@ -1,0 +1,123 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>The Hanger - Civil Aircraft Gallery</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="photos/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="photos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="photos/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Abel%7CSatisfy" rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="hangar.css"  type="text/css" media="screen" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log("jQuery version: " + $.fn.jquery);
+      });
+    </script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="centeredpage">
+    <div class="logo">
+			<a href="index.html"><img src="photos/logo.png" width="300" height="120" alt="logo"></a>
+	  </div>
+	</div>
+	<div id="header-wrapper">
+		  <div id="header" class="container">
+			<div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="index.html">Homepage</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="trips.html">Trips</a></li>
+					<li><a href="ADSB.html">ADS-B</a></li>
+					<li><a href="MA.html">Military Aircraft</a></li>
+          <li><a href="CA.html">Civil Aircraft</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<main>
+	<div id="page">
+		<div id="content">
+			<div class="post">
+				<h1 class="title"><a href="#">Civil Aircraft Gallery</a></h1>
+				<span style="white-space: nowrap;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note Links with TBA on the end means the aircraf tisn't added</span>
+			</div>
+		</div>
+	</div>
+  <div id="content-2">
+     <div class="gallery">
+        <figure>
+          <a href="photos/A320-200.jpg" data-fancybox="gallery" data-caption="Airbus A320">
+            <img src="photos/thumbnail/A320-200.jpg" alt="Airbus A320" />
+          </a>
+          <figcaption><a href="A320.html">Airbus A320</a></figcaption>
+        </figure>
+        
+        <figure>
+          <a href="photos/DC-3.jpg" data-fancybox="gallery" data-caption="Douglas DC-3">
+            <img src="photos/thumbnail/DC-3.jpg" alt="Douglas DC-3" />
+          </a>
+          <figcaption><a href="index.html">Douglas DC-3 TBA</a></figcaption>
+        </figure>
+        
+        <figure>
+          <a href="photos/EC-130.jpg" data-fancybox="gallery" data-caption="Eurocopter EC130">
+            <img src="photos/thumbnail/EC-130.jpg" alt="Eurocopter EC130" />
+          </a>
+           <figcaption><a href="index.html">Eurocopter EC130 TBA</a></figcaption>
+        </figure>
+        
+        <figure>
+          <a href="photos/GE-747.jpg" data-fancybox="gallery" data-caption="Boeing 747-400">
+            <img src="photos/thumbnail/GE-747.jpg" alt="Boeing 747-400" />
+          </a>
+           <figcaption><a href="747.html">Boeing 747-400</a></figcaption>
+        </figure>
+        
+        <figure>
+          <a href="photos/XV-15.jpg" data-fancybox="gallery" data-caption="Bell XV-15">
+            <img src="photos/thumbnail/XV-15.jpg" alt="Bell XV-15" />
+          </a>
+           <figcaption><a href="index.html">Bell XV-15 TBA</a></figcaption>
+        </figure>
+     </div>
+  </div>
+	</main>
+</div>
+<div id="footer">
+	<p>&copy; 2023, Joshua Alley. All rights reserved. <b>Email:</b><a href="mailto:jalley@augusta.edu" target="_blank">Jalley@augusta.edu</a></P>
+</div>
+<script>
+    src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"
+    Fancybox.bind('[data-fancybox="gallery"]', 
+    {
+      type: 'iframe',
+      iframe: 
+      {
+        preload: true,
+        css: 
+        {
+          width: '100%',
+          height: '100%',
+          overflow: 'hidden'
+        }
+      }
+    }
+  );
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NE4DL1K0WT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NE4DL1K0WT');
+</script>
+</body>
+</html>
